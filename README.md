@@ -91,8 +91,9 @@
 
 * [![Python][Python]][Python-url]
 * [![CSS][CSS]][CSS-url]
-* [![React][React.js]][React-url]
+* [![React.js][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Node.js][Node.js]][Node-url]
 
 
 
@@ -165,3 +166,6 @@ Project Link: [https://github.com/jtbarwell/flask-react-demo](https://github.com
 
 [CSS]: https://img.shields.io/badge/css-246fa6?style=for-the-badge&logo=css&logoColor=white
 [CSS-url]: https://www.w3.org/Style/CSS/Overview.en.html
+
+[Node.js]: https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white
+[Node-url]: https://nodejs.org/
