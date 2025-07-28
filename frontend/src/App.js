@@ -11,7 +11,7 @@ function App() {
     }, []);
 
     return (
-    <table>
+    <table id="People_Table">
         <thead>
             <tr>
                 <th>ID</th>
