@@ -10,7 +10,8 @@ def get_data():
     data = [
         {"id": 1, "name": "Michelle"},
         {"id": 2, "name": "Josh"},
-        {"id": 3, "name": "Brady"}
+        {"id": 3, "name": "Brady"},
+        {"id": 4, "name": "Fred"}
     ]
     return jsonify(data)
 
