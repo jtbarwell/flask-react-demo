@@ -9,7 +9,8 @@ def get_data():
     # Example data — pretend this comes from MSSQL
     data = [
         {"id": 1, "name": "Alice"},
-        {"id": 2, "name": "Bob"}
+        {"id": 2, "name": "Bob"},
+        {"id": 3, "name": "Josh"}
     ]
     return jsonify(data)
 
