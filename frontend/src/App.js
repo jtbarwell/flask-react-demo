@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Table.css';
 
 function App() {
   const [data, setData] = useState([]);
@@ -10,14 +11,22 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Flask + React Demo</h1>
-      <ul>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
         {data.map(item => (
-          <li key={item.id}>{item.id}: {item.name}</li>
+          <tr key={item.id}>
+            <td>{item.id}</td>
+            <td>{item.name}</td>
+          </tr>
         ))}
-      </ul>
-    </div>
+      </tbody>
+    </table>
   );
 }
 
