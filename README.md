@@ -105,7 +105,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_ --
 
 ### Top contributors:
 
-<a href="https://github.com/jtbarwell/test-repo/graphs/contributors">
+<a href="https://github.com/jtbarwell/flask-react-demo/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=jtbarwell/flask-react-demo" alt="contrib.rocks image" />
 </a>
 
@@ -114,7 +114,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_ --
 
 Joshua Barwell (He/Him) - jtbarwell@gmail.com
 
-Project Link: [https://github.com/jtbarwell/test-repo](https://github.com/jtbarwell/test-repo)
+Project Link: [https://github.com/jtbarwell/flask-react-demo](https://github.com/jtbarwell/flask-react-demo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
