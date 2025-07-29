@@ -1,0 +1,85 @@
+import React from 'react';
+import { useTable, useSortBy } from 'react-table';
+
+
+export default function BattingTable({ data }) {
+  const columns = React.useMemo(
+    () =>
+      [
+        'Player',
+        'Age',
+        'Pos',
+        'WAR',
+        'G',
+        'PA',
+        'AB',
+        'R',
+        'H',
+        '[2B]',
+        '[3B]',
+        'HR',
+        'RBI',
+        'SB',
+        'CS',
+        'BB',
+        'SO',
+        'BA',
+        'OBP',
+        'SLG',
+        'OPS',
+        '[OPS+]',
+        'rOBA',
+        '[Rbat+]',
+        'TB',
+        'GIDP',
+        'HBP',
+        'SH',
+        'SF',
+        'IBB'
+      ].map(col => ({
+        Header: col,
+        accessor: col
+      })),
+    []
+  );
+
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+  } = useTable({ columns, data }, useSortBy);
+
+  return (
+    <table {...getTableProps()}>
+      <thead>
+        {headerGroups.map(headerGroup => (
+          <tr {...headerGroup.getHeaderGroupProps()}>
+            {headerGroup.headers.map(column => (
+              <th
+                {...column.getHeaderProps(column.getSortByToggleProps())}
+                style={{ cursor: 'pointer' }}
+              >
+                {column.render('Header')}
+                {column.isSorted ? (column.isSortedDesc ? ' ▼' : ' ▲') : ''}
+              </th>
+            ))}
+          </tr>
+        ))}
+      </thead>
+      <tbody {...getTableBodyProps()}>
+        {rows.map(row => {
+          prepareRow(row);
+          return (
+            <tr {...row.getRowProps()}>
+              {row.cells.map(cell => (
+                <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+              ))}
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}
