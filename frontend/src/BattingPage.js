@@ -1,4 +1,3 @@
-// src/BattingPage.js
 import React, { useEffect, useState } from 'react';
 import BattingTable from './BattingTable';
 
