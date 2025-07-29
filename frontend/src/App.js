@@ -4,30 +4,31 @@ import './Table.css';
 
 import HomePage from './HomePage';
 import BattingPage from './BattingPage';
+import PitchingPage from './PitchingPage';
+import FieldingPage from './FieldingPage';
 
 function App() {
 
     return (
         <Router>
-            <nav>
-                <ul>
-                    {/* <li><Link to="/">Home</Link></li>
-                    <li><Link to="/batting">Batting</Link></li> */}
-                    {/* <button class="btn btn-info mb-3"><Link to="/">Home</Link></button>
-                    <button class="btn btn-info mb-3"><Link to="/batting">Batting</Link></button> */}
-                    <nav>
-                        <Link to="/" className="btn btn-primary mb-3 me-2">Home</Link>
-                        <Link to="/batting" className="btn btn-primary mb-3">Batting</Link>
-                    </nav>
-                </ul>
-            </nav>
+            <ul>
+                <nav>
+                    <Link to="/" className="btn btn-primary px-4 py-2">Home</Link>
+                    <Link to="/batting" className="btn btn-primary px-4 py-2">Batting</Link>
+                    <Link to="/pitching" className="btn btn-primary px-4 py-2">Pitching</Link>
+                    <Link to="/fielding" className="btn btn-primary px-4 py-2">Fielding</Link>
+                </nav>
+            </ul>
 
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/batting" element={<BattingPage />} />
+                <Route path="/pitching" element={<PitchingPage />} />
+                <Route path="/fielding" element={<FieldingPage />} />
             </Routes>
         </Router>
     );
 }
 
 export default App;
+ 
