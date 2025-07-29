@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './Table.css';
 
-function App() {
-    const [data, setData] = useState([]);
+import HomePage from './HomePage';
+import BattingPage from './BattingPage';
 
-    useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/data')
-        .then(res => res.json())
-        .then(setData);
-    }, []);
+function App() {
 
     return (
-        <table id="People_Table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                {data.map(item => (
-                <tr key={item.id}>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-            </tr>
-                ))}
-        </tbody>
-        </table>
+        <Router>
+            <nav>
+                <ul>
+                    {/* <li><Link to="/">Home</Link></li>
+                    <li><Link to="/batting">Batting</Link></li> */}
+                    {/* <button class="btn btn-info mb-3"><Link to="/">Home</Link></button>
+                    <button class="btn btn-info mb-3"><Link to="/batting">Batting</Link></button> */}
+                    <nav>
+                        <Link to="/" className="btn btn-primary mb-3 me-2">Home</Link>
+                        <Link to="/batting" className="btn btn-primary mb-3">Batting</Link>
+                    </nav>
+                </ul>
+            </nav>
+
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/batting" element={<BattingPage />} />
+            </Routes>
+        </Router>
     );
 }
 
