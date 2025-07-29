@@ -1,0 +1,272 @@
+[
+    {
+        "Player": "Braydon Fisher",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "24"
+    },
+    {
+        "Player": "Mason Fluharty",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "23"
+    },
+    {
+        "Player": "Tommy Nance",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "34"
+    },
+    {
+        "Player": "Max Scherzer",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "40"
+    },
+    {
+        "Player": "Brendon Little",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "28"
+    },
+    {
+        "Player": "Yariel RodrÃ­guez",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "28"
+    },
+    {
+        "Player": "Jeff Hoffman",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "32"
+    },
+    {
+        "Player": "Chad Green",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "34"
+    },
+    {
+        "Player": "Eric Lauer",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "30"
+    },
+    {
+        "Player": "Justin Bruihl",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "28"
+    },
+    {
+        "Player": "JosÃ© BerrÃ­os",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "31"
+    },
+    {
+        "Player": "Chris Bassitt",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "36"
+    },
+    {
+        "Player": "Kevin Gausman",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "34"
+    },
+    {
+        "Player": "Davis Schneider",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "26"
+    },
+    {
+        "Player": "Ernie Clement",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "29"
+    },
+    {
+        "Player": "Leo Jimenez",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "24"
+    },
+    {
+        "Player": "Addison Barger",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "25"
+    },
+    {
+        "Player": "Nathan Lukes",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "30"
+    },
+    {
+        "Player": "Bo Bichette",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "27"
+    },
+    {
+        "Player": "Vladimir Guerrero Jr.",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "26"
+    },
+    {
+        "Player": "Myles Straw",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "30"
+    },
+    {
+        "Player": "Ali SÃ¡nchez",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "28"
+    },
+    {
+        "Player": "Joey Loperfido",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "26"
+    },
+    {
+        "Player": "Tyler Heineman",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "34"
+    },
+    {
+        "Player": "Will Wagner",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "26"
+    },
+    {
+        "Player": "George Springer",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "35"
+    },
+    {
+        "Player": "AndrÃ©s GimÃ©nez",
+        "Pos": "Position",
+        "IL": "10-day",
+        "Age": "26"
+    },
+    {
+        "Player": "Daulton Varsho",
+        "Pos": "Position",
+        "IL": "10-day",
+        "Age": "28"
+    },
+    {
+        "Player": "Paxton Schultz",
+        "Pos": "Pitcher",
+        "IL": "15-day",
+        "Age": "27"
+    },
+    {
+        "Player": "Nick Sandlin",
+        "Pos": "Pitcher",
+        "IL": "15-day",
+        "Age": "28"
+    },
+    {
+        "Player": "Yimi GarcÃ­a",
+        "Pos": "Pitcher",
+        "IL": "15-day",
+        "Age": "34"
+    },
+    {
+        "Player": "Bowden Francis",
+        "Pos": "Pitcher",
+        "IL": "60-day",
+        "Age": "29"
+    },
+    {
+        "Player": "Angel Bastardo",
+        "Pos": "Pitcher",
+        "IL": "60-day",
+        "Age": "23"
+    },
+    {
+        "Player": "Alek Manoah",
+        "Pos": "Pitcher",
+        "IL": "60-day",
+        "Age": "27"
+    },
+    {
+        "Player": "Ryan Burr",
+        "Pos": "Pitcher",
+        "IL": "60-day",
+        "Age": "31"
+    },
+    {
+        "Player": "Anthony Santander",
+        "Pos": "Position",
+        "IL": "60-day",
+        "Age": "30"
+    },
+    {
+        "Player": "Alejandro Kirk",
+        "Pos": "Position",
+        "IL": "7-day",
+        "Age": "26"
+    },
+    {
+        "Player": "Lazaro Estrada",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "26"
+    },
+    {
+        "Player": "Robinson PiÃ±a",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "26"
+    },
+    {
+        "Player": "Adam Macko",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "24"
+    },
+    {
+        "Player": "Easton Lucas",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "28"
+    },
+    {
+        "Player": "Jake Bloss",
+        "Pos": "Pitcher",
+        "IL": "",
+        "Age": "24"
+    },
+    {
+        "Player": "Orelvis Martinez",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "23"
+    },
+    {
+        "Player": "Jonatan Clase",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "23"
+    },
+    {
+        "Player": "Alan Roden",
+        "Pos": "Position",
+        "IL": "",
+        "Age": "25"
+    }
+]
