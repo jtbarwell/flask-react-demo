@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './Table.css';
 
 import HomePage from './HomePage';
+import MyRosterPage from './MyRosterPage';
 import BattingPage from './BattingPage';
 import PitchingPage from './PitchingPage';
 import FieldingPage from './FieldingPage';
@@ -13,15 +14,17 @@ function App() {
         <Router>
             <ul>
                 <nav>
-                    <Link to="/" className="btn btn-primary px-4 py-2">Home</Link>
-                    <Link to="/batting" className="btn btn-primary px-4 py-2">Batting</Link>
-                    <Link to="/pitching" className="btn btn-primary px-4 py-2">Pitching</Link>
-                    <Link to="/fielding" className="btn btn-primary px-4 py-2">Fielding</Link>
+                    <Link to="/"            className="btn btn-primary px-4 py-2">Home</Link>
+                    <Link to="/my-roster"   className="btn btn-primary px-4 py-2">My Roster</Link>
+                    <Link to="/batting"     className="btn btn-primary px-4 py-2">Batting</Link>
+                    <Link to="/pitching"    className="btn btn-primary px-4 py-2">Pitching</Link>
+                    <Link to="/fielding"    className="btn btn-primary px-4 py-2">Fielding</Link>
                 </nav>
             </ul>
 
             <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/my-roster" element={<MyRosterPage />} />
                 <Route path="/batting" element={<BattingPage />} />
                 <Route path="/pitching" element={<PitchingPage />} />
                 <Route path="/fielding" element={<FieldingPage />} />
