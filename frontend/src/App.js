@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './Table.css';
+import './globalCSS/Table.css';
 
 import HomePage from './HomePage';
 import MyRosterPage from './MyRosterPage';
