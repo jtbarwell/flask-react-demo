@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PlayersTable from './PlayersTable';
+import PlayersTable from './MyRosterTable';
 
 export default function MyRosterPage() {
   const [players, setPlayers] = useState([]);

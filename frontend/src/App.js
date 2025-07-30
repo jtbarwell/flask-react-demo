@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './Table.css';
+import './globalCSS/Table.css';
 
-import HomePage from './HomePage';
-import MyRosterPage from './MyRosterPage';
-import BattingPage from './BattingPage';
-import PitchingPage from './PitchingPage';
-import FieldingPage from './FieldingPage';
+import HomePage from './HomePageFolder/HomePage';
+import MyRosterPage from './MyRosterPageFolder/MyRosterPage';
+import BattingPage from './BattingPageFolder/BattingPage';
+import PitchingPage from './PitchingPageFolder/PitchingPage';
+import FieldingPage from './FieldingPageFolder/FieldingPage';
 
 function App() {
 
