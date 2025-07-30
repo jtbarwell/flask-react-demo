@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './globalCSS/Table.css';
 
-import HomePage from './HomePage';
+import HomePage from './HomePageFolder/HomePage';
 import MyRosterPage from './MyRosterPageFolder/MyRosterPage';
 import BattingPage from './BattingPage';
 import PitchingPage from './PitchingPage';
