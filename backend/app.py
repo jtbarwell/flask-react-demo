@@ -11,10 +11,10 @@ CORS(app)  # This allows your React app to call Flask API
 def get_data():
     # Example data — pretend this comes from MSSQL
     data = [
-        {"id": 1, "name": "Michelle"},
-        {"id": 2, "name": "Josh"},
-        {"id": 3, "name": "Brady"},
-        {"id": 4, "name": "Fred"}
+        {"Position": 1, "Team": "Michelle"},
+        {"Position": 2, "Team": "Josh"},
+        {"Position": 3, "Team": "Brady"},
+        {"Position": 4, "Team": "Fred"}
     ]
     return jsonify(data)
 
