@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PlayersTable from './MyRosterTable';
+import MyRosterTable from './MyRosterTable';
 
 export default function MyRosterPage() {
   const [players, setPlayers] = useState([]);
@@ -20,7 +20,7 @@ export default function MyRosterPage() {
                 <img src = "/baseballdiamond.svg" alt = "image having issues"/>
             </div>
             <div class="flex-child-element">
-                <PlayersTable data={players} />
+                <MyRosterTable data={players} />
             </div>
         </div>
         
