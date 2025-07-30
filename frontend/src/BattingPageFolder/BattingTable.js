@@ -11,8 +11,8 @@ export default function BattingTable({ data }) {
         'BB', 'SO', 'BA', 'OBP', 'SLG', 'OPS', '[OPS+]', 
         'rOBA', '[Rbat+]', 'TB', 'GIDP', 'HBP', 'SH', 'SF', 'IBB'
       ].map(col => ({
-        Header: col,
-        accessor: col
+        Header: col.replace(/[\[\]]/g, ''),
+        accessor: row => row[col]
       })),
     []
   );
