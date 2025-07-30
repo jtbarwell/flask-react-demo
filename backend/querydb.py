@@ -39,7 +39,7 @@ def getBattingDF(url):
             return pd.DataFrame()
 
         print("\n✅ Scraping result:")
-        df = pd.DataFrame(columns=['Player', 'Pos'])
+        df = pd.DataFrame(columns=['Player', 'Pos', 'IL', 'Age'])
         for row in roster_table.tbody.find_all('tr'):
             cols = row.find_all('td')
             if cols:

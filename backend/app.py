@@ -23,12 +23,18 @@ def get_data():
 # Load JSON file
 with open('backend/baseballBattingStats.json') as f:
     batting_data = json.load(f)
+with open('backend/baseballPitchingStats.json') as f:
+    pitching_data = json.load(f)
 with open('backend/baseballPlayers.json') as f:
     players_data = json.load(f)
 
 @app.route('/api/batting')
 def get_batting():
     return jsonify(batting_data)
+
+@app.route('/api/pitching')
+def get_pitching():
+    return jsonify(pitching_data)
 
 @app.route('/api/players')
 def get_players():
