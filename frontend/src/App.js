@@ -5,7 +5,7 @@ import './globalCSS/Table.css';
 import HomePage from './HomePageFolder/HomePage';
 import MyRosterPage from './MyRosterPageFolder/MyRosterPage';
 import BattingPage from './BattingPageFolder/BattingPage';
-import PitchingPage from './PitchingPage';
+import PitchingPage from './PitchingPageFolder/PitchingPage';
 import FieldingPage from './FieldingPageFolder/FieldingPage';
 
 function App() {
