@@ -4,7 +4,7 @@ import './globalCSS/Table.css';
 
 import HomePage from './HomePageFolder/HomePage';
 import MyRosterPage from './MyRosterPageFolder/MyRosterPage';
-import BattingPage from './BattingPage';
+import BattingPage from './BattingPageFolder/BattingPage';
 import PitchingPage from './PitchingPage';
 import FieldingPage from './FieldingPage';
 
