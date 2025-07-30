@@ -2,7 +2,7 @@ import React from 'react';
 import { useTable, useSortBy } from 'react-table';
 
 
-export default function PlayersTable({ data }) {
+export default function MyRosterTable({ data }) {
   const columns = React.useMemo(
     () =>
       [
