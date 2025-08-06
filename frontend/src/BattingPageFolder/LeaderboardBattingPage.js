@@ -14,8 +14,8 @@ export default function AllStatsBattingPage() {
   return (
     <div>
       <h1>Batting Leaders</h1>
-      <p>This is where the batting stats and lists will go!</p>
-      <BattingTable data={batting} condition={row.OPS > 0.750} />
+      <p>Leader is determined by whether their OPS is &gt;= 0.850</p>
+      <BattingTable data={batting} condition={row => row.OPS >= 0.850} />
     </div>
   );
 }

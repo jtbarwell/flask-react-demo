@@ -5,8 +5,10 @@ import { useTable, useSortBy } from 'react-table';
 export default function BattingTable({ data, condition }) {
 
     const filteredData = React.useMemo(() => {
-        if (!condition) return data;
-        return data.filter(row => condition);
+        if (typeof condition === 'function') {
+        return data.filter(condition);
+        }
+        return data;
     }, [data, condition]);
 
     const columns = React.useMemo(
