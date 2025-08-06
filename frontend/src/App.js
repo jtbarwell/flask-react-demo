@@ -6,7 +6,7 @@ import Header from './Header';
 
 import HomePage from './HomePageFolder/HomePage';
 import MyRosterPage from './MyRosterPageFolder/MyRosterPage';
-import BattingPage from './BattingPageFolder/BattingPage';
+import BattingAllStatsPage from './BattingPageFolder/BattingAllStatsPage';
 import PitchingPage from './PitchingPageFolder/PitchingPage';
 import FieldingPage from './FieldingPageFolder/FieldingPage';
 
@@ -19,7 +19,10 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/my-roster" element={<MyRosterPage />} />
-                <Route path="/batting" element={<BattingPage />} />
+
+                <Route path="/batting/all-stats" element={<BattingAllStatsPage />} />
+                
+
                 <Route path="/pitching" element={<PitchingPage />} />
                 <Route path="/fielding" element={<FieldingPage />} />
             </Routes>
