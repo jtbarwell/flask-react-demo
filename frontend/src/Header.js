@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import './globalCSS/Table.css';
 import './globalCSS/App.css';
@@ -16,11 +16,28 @@ const navItems = [
                 label: 'Teams',
                 dropdown: true,
                 items: [
-                    { path: '/batting/teams/TOR', label: 'Toronto Blue Jays' },
-                    { path: '/batting/teams/NYY', label: 'New York Yankees' },
-                    { path: '/batting/teams/ALEast/BOS', label: 'Boston Red Sox' },
-                    { path: '/batting/teams/ALEast/TBR', label: 'Tampa Bay Rays' },
-                    { path: '/batting/teams/ALEast/BAL', label: 'Baltimore Orioles' },
+                    {
+                        label: 'AL East',
+                        dropdown: true,
+                        items: [    
+                            { path: '/batting/teams/ALEastTOR', label: 'Toronto Blue Jays' },
+                            { path: '/batting/teams/ALEastNYY', label: 'New York Yankees' },
+                            { path: '/batting/teams/ALEast/BOS', label: 'Boston Red Sox' },
+                            { path: '/batting/teams/ALEast/TBR', label: 'Tampa Bay Rays' },
+                            { path: '/batting/teams/ALEast/BAL', label: 'Baltimore Orioles' },
+                        ]
+                    },
+                    { 
+                        label: 'AL West',
+                        dropdown: true,
+                        items: [
+                            { path: '/batting/teams/ALWest/HOU', label: 'Houston Astros'},
+                            { path: '/batting/teams/ALWest/SEA', label: 'Seasttle Mariners'},
+                            { path: '/batting/teams/ALWest/TEX', label: 'Texas Rangers'},
+                            { path: '/batting/teams/ALWest/LAA', label: 'Los Angeles Angels'},
+                            { path: '/batting/teams/ALWest/ATH', label: 'Athletics'},
+                        ]
+                    },
                 ]
             }
         ]
@@ -30,42 +47,72 @@ const navItems = [
 ];
 
 
+
+function recurseHeader(item, parentKey = '', openSubmenus, handleSubmenuToggle) {
+    return (
+        <ul className="dropdown-menu">
+            {item.items.map((subItem, subIndex) => {
+                const key = `${parentKey}/${subItem.label}`;
+
+                if(!subItem.dropdown) {
+                    return (
+                        <li key={key}>
+                            <Link className="dropdown-item" to={subItem.path}>{subItem.label}</Link>
+                        </li>
+                    )
+                } else {
+                    return (
+                        <li className={`dropdown-submenu ${openSubmenus[key] ? 'show' : ''}`} key={key}>
+                            <a className="dropdown-item dropdown-toggle" href="#" 
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    handleSubmenuToggle(key);
+                                }}>{subItem.label}</a>
+                            
+                            {recurseHeader(subItem, key, openSubmenus, handleSubmenuToggle)}
+                            
+                        </li>
+                    )
+                }
+            })}
+        </ul>
+    );
+}
+
+
+
+
+
+
 function Header() {
     const location = useLocation(); // for highlighting active nav
 
+    const [openRootDropdown, setOpenRootDropdown] = useState(null);
+    const [openSubmenus, setOpenSubmenus] = useState({});
 
 
 
-    useEffect(() => {
-        function handleClick(e) {
-            e.preventDefault();
-            e.stopPropagation();  // <== THIS prevents parent dropdown from closing
-
-            const submenu = e.currentTarget.nextElementSibling;
-            const isShown = submenu.classList.contains('show');
-
-            // Close other open submenus
-            document.querySelectorAll('.dropdown-submenu .dropdown-menu.show').forEach(el => {
-                el.classList.remove('show');
-            });
-
-            if (!isShown) submenu.classList.add('show');
-        }
-
-        const submenuToggles = document.querySelectorAll('.dropdown-submenu > a');
-
-        submenuToggles.forEach(toggle => {
-            toggle.addEventListener('click', handleClick);
+    const handleRootDropdownToggle = (key) => {
+        setOpenRootDropdown(prev => {
+            if (prev === key) {
+                // Closing the dropdown, also reset all submenus
+                setOpenSubmenus({});
+                return null;
+            } else {
+                // Opening a new root dropdown, reset submenus
+                setOpenSubmenus({});
+                return key;
+            }
         });
+    };
 
-        return () => {
-            submenuToggles.forEach(toggle => {
-            toggle.removeEventListener('click', handleClick);
-            });
-        };
-    }, []);
-
-
+    const handleSubmenuToggle = (key) => {
+        setOpenSubmenus(prev => ({
+            ...prev,
+            [key]: !prev[key]
+        }));
+    };
 
 
 
@@ -77,47 +124,33 @@ function Header() {
                     <span className="fs-3">Fantasy Baseball Dashboard</span>
                 </Link>
 
-                <ul className="nav nav-pills">
+                
+
+                <ul className="nav">
                     {navItems.map((item, index) => {
                         if (!item.dropdown) {
                             return (
                                 <li className="nav-item" key={index}>
                                     <Link to={item.path} className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}>{item.label}</Link>
                                 </li>
-                            );
+                            )
                         } else {
                             return (
                                 <li className="nav-item dropdown" key={index}>
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{item.label}</a>
-                                    <ul className="dropdown-menu">
-                                        {item.items.map((subItem, subIndex) => {
-                                            if (!subItem.dropdown) {
-                                                return (
-                                                    <li key={subIndex}>
-                                                        <Link className="dropdown-item" to={subItem.path}>{subItem.label}</Link>
-                                                    </li>
-                                                );
-                                            } else {
-                                                return (
-                                                    <li className="dropdown-submenu" key={subIndex}>
-                                                        <a className="dropdown-item dropdown-toggle" href="#">{subItem.label}</a>
-                                                        <ul className="dropdown-menu">
-                                                            {subItem.items.map((deepItem, deepIndex) => (
-                                                                <li key={deepIndex}>
-                                                                    <Link className="dropdown-item" to={deepItem.path}>{deepItem.label}</Link>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    </li>
-                                                );
-                                            }
-                                        })}
-                                    </ul>
+                                    
+                                    {recurseHeader(item, item.label, openSubmenus, handleSubmenuToggle)}
+                                    
                                 </li>
-                            );
+                            )
                         }
                     })}
                 </ul>
+
+
+
+
+
             </div>
         </header>
 
