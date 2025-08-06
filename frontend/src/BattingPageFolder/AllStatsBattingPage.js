@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BattingTable from './BattingTable';
 
-export default function BattingAllStatsPage() {
+export default function AllStatsBattingPage() {
   const [batting, setBatting] = useState([]);
 
   useEffect(() => {

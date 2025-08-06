@@ -6,7 +6,7 @@ import Header from './Header';
 
 import HomePage from './HomePageFolder/HomePage';
 import MyRosterPage from './MyRosterPageFolder/MyRosterPage';
-import BattingAllStatsPage from './BattingPageFolder/BattingAllStatsPage';
+import BattingAllStatsPage from './BattingPageFolder/AllStatsBattingPage';
 import PitchingPage from './PitchingPageFolder/PitchingPage';
 import FieldingPage from './FieldingPageFolder/FieldingPage';
 
