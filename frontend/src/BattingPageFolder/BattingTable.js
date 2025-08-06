@@ -29,7 +29,7 @@ export default function BattingTable({ data, condition }) {
         headerGroups,
         rows,
         prepareRow,
-    } = useTable({ columns, data }, useSortBy);
+    } = useTable({ columns, data: filteredData }, useSortBy);
 
     return (
         <table {...getTableProps()}>
