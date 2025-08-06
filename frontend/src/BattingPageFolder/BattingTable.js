@@ -6,7 +6,7 @@ export default function BattingTable({ data, condition }) {
 
     const filteredData = React.useMemo(() => {
         if (!condition) return data;
-        return data.filter(row => row.Team === condition);
+        return data.filter(row => condition);
     }, [data, condition]);
 
     const columns = React.useMemo(
