@@ -4,10 +4,20 @@ import './globalCSS/Table.css';
 import './globalCSS/App.css';
 import Header from './Header';
 
+//  Home
 import HomePage from './HomePageFolder/HomePage';
+
+// Roster
 import MyRosterPage from './MyRosterPageFolder/MyRosterPage';
-import BattingAllStatsPage from './BattingPageFolder/AllStatsBattingPage';
+
+// Batting
+import AllStatsBattingPage from './BattingPageFolder/AllStatsBattingPage';
+import LeaderboardBattingPage from './BattingPageFolder/LeaderboardBattingPage';
+
+// Pitching
 import PitchingPage from './PitchingPageFolder/PitchingPage';
+
+// Fielding
 import FieldingPage from './FieldingPageFolder/FieldingPage';
 
 
@@ -20,8 +30,8 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/my-roster" element={<MyRosterPage />} />
 
-                <Route path="/batting/all-stats" element={<BattingAllStatsPage />} />
-                
+                <Route path="/batting/all-stats" element={<AllStatsBattingPage />} />
+                <Route path="/batting/leaderboard" element={<LeaderboardBattingPage />} />
 
                 <Route path="/pitching" element={<PitchingPage />} />
                 <Route path="/fielding" element={<FieldingPage />} />
