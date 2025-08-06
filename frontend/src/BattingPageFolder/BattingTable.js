@@ -6,7 +6,7 @@ export default function BattingTable({ data }) {
   const columns = React.useMemo(
     () =>
       [
-        'Player', 'Age', 'Pos', 'WAR', 'G', 'PA', 'AB', 
+        'Team', 'Player', 'Age', 'Pos', 'WAR', 'G', 'PA', 'AB', 
 		'R', 'H', '[2B]', '[3B]', 'HR', 'RBI', 'SB', 'CS', 
         'BB', 'SO', 'BA', 'OBP', 'SLG', 'OPS', '[OPS+]', 
         'rOBA', '[Rbat+]', 'TB', 'GIDP', 'HBP', 'SH', 'SF', 'IBB'
