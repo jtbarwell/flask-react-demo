@@ -10,7 +10,7 @@ const navItems = [
         label: 'Batting',
         dropdown: true,
         items: [
-            { path: '/batting', label: 'All Stats' },
+            { path: '/batting/all-stats', label: 'All Stats' },
             { path: '/batting/leaderboard', label: 'Leaderboard' },
             {
                 label: 'Teams',

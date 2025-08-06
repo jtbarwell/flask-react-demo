@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import BattingTable from './BattingTable';
+import BattingTable from '../BattingTable';
 
-export default function BattingPage() {
+export default function TORBattingPage() {
   const [batting, setBatting] = useState([]);
 
   useEffect(() => {
@@ -13,9 +13,9 @@ export default function BattingPage() {
 
   return (
     <div>
-      <h1>Batting Page</h1>
-      <p>This is where the batting stats and lists will go!</p>
-      <BattingTable data={batting} />
+      <h1>Toronto Blue Jays Batting</h1>
+      <p></p>
+      <BattingTable data={batting} condition={row => row.Team === "TOR"} />
     </div>
   );
 }
