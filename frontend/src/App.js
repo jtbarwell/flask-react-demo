@@ -14,6 +14,7 @@ import MyRosterPage from './MyRosterPageFolder/MyRosterPage';
 import AllStatsBattingPage from './BattingPageFolder/AllStatsBattingPage';
 import LeaderboardBattingPage from './BattingPageFolder/LeaderboardBattingPage';
 import TORBattingPage from './BattingPageFolder/TeamsPageFolder/TORBattingPage';
+import NYYBattingPage from './BattingPageFolder/TeamsPageFolder/NYYBattingPage';
 
 // Pitching
 import PitchingPage from './PitchingPageFolder/PitchingPage';
@@ -34,6 +35,7 @@ function App() {
                 <Route path="/batting/all-stats" element={<AllStatsBattingPage />} />
                 <Route path="/batting/leaderboard" element={<LeaderboardBattingPage />} />
                 <Route path="/batting/teams/ALEast/TOR" element={<TORBattingPage />} />
+                <Route path="/batting/teams/ALEast/NYY" element={<NYYBattingPage />} />
 
                 <Route path="/pitching" element={<PitchingPage />} />
                 <Route path="/fielding" element={<FieldingPage />} />
