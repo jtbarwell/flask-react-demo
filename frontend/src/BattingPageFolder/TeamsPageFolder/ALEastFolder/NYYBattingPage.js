@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import BattingTable from '../BattingTable';
+import BattingTable from '../../BattingTable';
 
 export default function NYYBattingPage() {
   const [batting, setBatting] = useState([]);
