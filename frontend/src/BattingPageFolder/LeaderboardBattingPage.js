@@ -14,11 +14,9 @@ export default function AllStatsBattingPage() {
 		.catch(err => console.error(err));
 	}, []);
 
-
-
 	const condition = React.useCallback(
-		selectedYear === "all"
-			? true
+		selectedYear < 0
+			? (row) => Number(row.Year) > 0
 			: (row) => Number(row.Year) === Number(selectedYear),
 		[selectedYear]
 	);
@@ -36,7 +34,7 @@ export default function AllStatsBattingPage() {
             <div style={{ display: 'inline-block' }}>
                 <div className="d-flex justify-content-end mb-2">
                     <select id="years" className="form-select w-auto" value={selectedYear} onChange={(e)=>setSelectedYear(Number(e.target.value))}>
-                        <option key="all" value="all">All Years</option>
+                        <option key="-1" value="-1">All Years</option>
                             {
                                 Array.from(
                                     { length: currentYear - startYear + 1 }, 
