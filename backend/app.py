@@ -19,6 +19,7 @@ def get_data():
     return jsonify(data)
 
 
+queryData("DESKTOP-IEKNRR8\SQLEXPRESS", "baseball", "{ODBC Driver 17 for SQL Server}", "select * from BattingStats").to_json('backend/jsonData/baseballBattingStats.json', orient='records', indent=4)
 
 # Load JSON file
 with open('backend/jsonData/baseballBattingStats.json') as f:
