@@ -30,13 +30,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/jtbarwell/test-repo">
-    <img src="backend/public/logo512.png" alt="Logo" width="150" height="150">
+    <img src="frontend/public/Fantasy Baseball.png" alt="Logo" width="150" height="150">
   </a>
 
-<h3 align="center">React.js and Flask web demo test</h3>
+<h3 align="center">Fantasy Baseball Database Interface</h3>
 
   <p align="center">
-    This is the framework for learning how to use React.js and Flask <br />
+    This is the framework for me learning how to use React.js, Flask, JavaScript, and Node.js<br />
     <br />
     <a href="https://github.com/jtbarwell/test-repo"><strong>Explore the docs »</strong></a>
     <br />
