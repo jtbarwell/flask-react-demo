@@ -32,7 +32,7 @@ import KCRBattingPage from './BattingPageFolder/TeamsPageFolder/ALCentralFolder/
 import MINBattingPage from './BattingPageFolder/TeamsPageFolder/ALCentralFolder/MINBattingPage';
 
 // Pitching
-import AllStatsPitchingPage from './PitchingPageFolder/PitchingPage';
+import AllStatsPitchingPage from './PitchingPageFolder/AllStatsPitchingPage';
 
 // Fielding
 import FieldingPage from './FieldingPageFolder/FieldingPage';
