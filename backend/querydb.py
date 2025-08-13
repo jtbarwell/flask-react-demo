@@ -9,13 +9,12 @@ import time
 # driver = '{ODBC Driver 17 for SQL Server}'
 
 
-def query_to_JSON(server, db, driver, query):
+def queryData(server, db, driver, query):
     connection_string = f'Driver={driver};Server={server};Database={db};Trusted_Connection=yes;'
     with pyodbc.connect(connection_string) as conn:
         resultDF = pd.read_sql(query, conn)
-        jsonResult = resultDF.to_json()
     
-    return jsonResult
+    return resultDF
 
 
 def insert_query(server, db, driver, query, params=None):
