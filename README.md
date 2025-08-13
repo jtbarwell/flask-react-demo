@@ -131,11 +131,14 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Built With
 
-* [![Python][Python]][Python-url]
-* [![CSS][CSS]][CSS-url]
 * [![React.js][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![Node.js][Node.js]][Node-url]
+* [![JavaScript][JavaScript]][JavaScript-url]
+* [![CSS][CSS]][CSS-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Python][Python]][Python-url]
+* [![Pandas][Pandas]][Pandas-url]
+* [![Microsoft SQL Server][Microsoft SQL Server]][MSSQL-url]
 
 
 
@@ -155,7 +158,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_ --
 <!-- CONTACT -->
 ## Contact
 
-Joshua Barwell (He/Him) - jtbarwell@gmail.com
+Joshua Barwell (He/Him) - jtbarwell@gmail.com | [Joshua Barwell Linkedin](https://www.linkedin.com/in/joshuabarwell/)
 
 Project Link: [https://github.com/jtbarwell/flask-react-demo](https://github.com/jtbarwell/flask-react-demo)
 
@@ -191,23 +194,26 @@ Project Link: [https://github.com/jtbarwell/flask-react-demo](https://github.com
 [linkedin-url]: https://linkedin.com/in/joshuabarwell
 [product-screenshot]: images/screenshot.png
 
-[Python-url]: https://python.org
+[React.js]: https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+
+[Node.js]: https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white
+[Node-url]: https://nodejs.org/
+
+[JavaScript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=000
+[JavaScript-url]: https://www.javascript.com/
+
+[CSS]: https://img.shields.io/badge/css-246fa6?style=for-the-badge&logo=css&logoColor=white
+[CSS-url]: https://www.w3.org/Style/CSS/Overview.en.html
+
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+
 [Python]: https://img.shields.io/badge/python-295478?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://python.org
 
 [Pandas]: https://img.shields.io/badge/pandas-140853?style=for-the-badge&logo=pandas&logoColor=white
 [Pandas-url]: https://pandas.pydata.org/
 
 [Microsoft SQL Server]: https://custom-icon-badges.demolab.com/badge/Microsoft%20SQL%20Server-CC2927?logo=mssqlserver-white&logoColor=white
 [MSSQL-url]: https://microsoft.com/en-ca/sql-server
-
-[React.js]: https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-
-[CSS]: https://img.shields.io/badge/css-246fa6?style=for-the-badge&logo=css&logoColor=white
-[CSS-url]: https://www.w3.org/Style/CSS/Overview.en.html
-
-[Node.js]: https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white
-[Node-url]: https://nodejs.org/
