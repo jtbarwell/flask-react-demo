@@ -6,9 +6,9 @@ export default function PitchingTable({ data }) {
   const columns = React.useMemo(
     () =>
       [
-        'Player', 'Age', 'Pos', 'WAR', 'W', 'L', '[W-L%]', 'ERA', 'G', 'GS', 'GF', 
+        'Team', 'Year', 'Player', 'Age', 'Pos', 'WAR', 'W', 'L', 'W-L%', 'ERA', 'G', 'GS', 'GF', 
         'CG', 'SHO', 'SV', 'IP', 'H', 'R', 'ER', 'HR', 'BB', 'IBB', 'SO', 'HBP', 
-        'BK', 'WP', 'BF', '[ERA+]', 'FIP', 'WHIP', 'H9', 'HR9', 'BB9', 'SO9', '[SO/BB]'
+        'BK', 'WP', 'BF', 'ERA+', 'FIP', 'WHIP', 'H9', 'HR9', 'BB9', 'SO9'
       ].map(col => ({
         Header: col.replace(/[\[\]]/g, ''),
         accessor: row => row[col]
