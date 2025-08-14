@@ -46,7 +46,7 @@ const navItems = [
                             { path: '/batting/teams/ALCentral/CLE', label: 'Cleveland Guardians'},
                             { path: '/batting/teams/ALCentral/KCR', label: 'Kansas City Royals'},
                             { path: '/batting/teams/ALCentral/MIN', label: 'Minnesota Twins'},
-                            { path: '/batting/teams/ALCentral/CWS', label: 'Chicago White Sox'},
+                            { path: '/batting/teams/ALCentral/CHW', label: 'Chicago White Sox'},
                         ]
                     },
                     {
@@ -352,6 +352,7 @@ function Header() {
 
 
 
+				<button type="button" class="btn btn-primary btn-circle"><i class="bi bi-person-circle h2"></i></button>
 
             </div>
         </header>
