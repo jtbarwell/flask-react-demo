@@ -62,6 +62,12 @@ function App() {
                 <Route path="/batting/teams/ALWest/LAA" element={<LAABattingPage />} />
                 <Route path="/batting/teams/ALWest/SEA" element={<SEABattingPage />} />
                 <Route path="/batting/teams/ALWest/TEX" element={<TEXBattingPage />} />
+                
+                <Route path="/batting/teams/ALCentral/DET" element={<DETBattingPage />} />
+                <Route path="/batting/teams/ALCentral/CLE" element={<CLEBattingPage />} />
+                <Route path="/batting/teams/ALCentral/KCR" element={<KCRBattingPage />} />
+                <Route path="/batting/teams/ALCentral/MIN" element={<MINBattingPage />} />
+                <Route path="/batting/teams/ALCentral/CHW" element={<CHWBattingPage />} />
 
                 <Route path="/pitching" element={<AllStatsPitchingPage />} />
                 <Route path="/fielding" element={<FieldingPage />} />
